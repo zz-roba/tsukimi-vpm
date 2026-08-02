@@ -1,0 +1,40 @@
+{
+  "name": "TsukimiCode",
+  "id": "dev.tsukimicode.vpm",
+  "url": "https://zz-roba.github.io/tsukimi-vpm/index.json",
+  "author": "TsukimiCode",
+  "packages": {
+    "com.tsukimicode.udon-tools": {
+      "versions": {
+        "0.1.8": {
+          "name": "com.tsukimicode.udon-tools",
+          "displayName": "TsukimiCode Udon Tools",
+          "version": "0.1.8",
+          "unity": "2022.3",
+          "description": "UdonSharp スーパーセットの C# 言語 Tsukimi# のコンパイラ。",
+          "author": {
+            "name": "TsukimiCode"
+          },
+          "changelogUrl": "https://github.com/zz-roba/tsukimi-vpm/releases/tag/v0.1.8",
+          "vpmDependencies": {
+            "com.vrchat.worlds": ">=3.10.4"
+          },
+          "samples": [
+            {
+              "displayName": "Showcase（構文と同期と GPU の見本市）",
+              "description": "Tsukimi# で書ける C# の書き方を1つずつ見せる16本。switch 式・record・with・独自 struct の演算子・継承・interface・null 安全・データ指向・タプル、手動同期／自動同期、引数つきのネットワークイベント、別のふるまいの呼び出し、プレイヤーと時間、そして GPU で解く水面と、その結果を読み戻して物を浮かせる例。16本を並べたシーンが付いていて、開いて Play するとそのまま触れます。アセンブリ定義の中に入れてあるので新しい構文が使えます（同梱の README に帰結を書いています）。",
+              "path": "Samples~/Showcase"
+            },
+            {
+              "displayName": "FloorGlow（光る床）",
+              "description": "プレイヤーの足元で床パネルが色つきに光るサンプル。触ると光り方が切り替わります（シーン付き）。",
+              "path": "Samples~/FloorGlow"
+            }
+          ],
+          "url": "https://github.com/zz-roba/tsukimi-vpm/releases/download/v0.1.8/com.tsukimicode.udon-tools-0.1.8-vpm.zip",
+          "zipSHA256": "419380ee41ffae1554e795b7ad274cbc6e956e73f298dd85bb1744a0db73c6fd"
+        }
+      }
+    }
+  }
+}

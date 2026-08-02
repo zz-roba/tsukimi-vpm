@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TsukimiCode VPM Listing</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+  code, .url { font-family: ui-monospace, monospace; }
+  .url { display: inline-block; background: rgba(128,128,128,0.15); padding: 0.35rem 0.6rem; border-radius: 6px; word-break: break-all; }
+  .btn { display: inline-block; margin: 0.5rem 0; padding: 0.6rem 1rem; border-radius: 8px; background: #4a6; color: #fff; text-decoration: none; font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+  th, td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid rgba(128,128,128,0.3); }
+  .muted { opacity: 0.7; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+  <h1>TsukimiCode VPM Listing</h1>
+  <p>A typed language for VRChat / Udon that aims to accept UdonSharp code as-is.</p>
+
+  <h2>Add to VCC / ALCOM</h2>
+  <p><a class="btn" href="vcc://vpm/addRepo?url=https://zz-roba.github.io/tsukimi-vpm/index.json">Add to VCC</a></p>
+  <p>Or add this URL manually:</p>
+  <p class="url" id="listing-url">https://zz-roba.github.io/tsukimi-vpm/index.json</p>
+  <p class="muted">日本語: 上のボタン、または URL を VCC / ALCOM のリポジトリに手動で追加してください。</p>
+
+  <h2>Packages</h2>
+  <table id="pkgs"><thead><tr><th>Package</th><th>Latest</th></tr></thead><tbody></tbody></table>
+
+  <script>
+    fetch('index.json').then(r => r.json()).then(data => {
+      const tb = document.querySelector('#pkgs tbody');
+      const pkgs = data.packages || {};
+      Object.keys(pkgs).forEach(id => {
+        const vers = Object.keys(pkgs[id].versions || {}).sort();
+        const latest = vers[vers.length - 1] || '-';
+        const tr = document.createElement('tr');
+        tr.innerHTML = '<td><code>' + id + '</code></td><td>' + latest + '</td>';
+        tb.appendChild(tr);
+      });
+    }).catch(() => {});
+  </script>
+</body>
+</html>
