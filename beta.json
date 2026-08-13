@@ -1,0 +1,39 @@
+{
+  "name": "TsukimiSharp (beta)",
+  "id": "dev.tsukimicode.vpm.beta",
+  "url": "https://zz-roba.github.io/tsukimi-vpm/beta.json",
+  "author": "TsukimiCode",
+  "packages": {
+    "com.tsukimicode.udon-tools": {
+      "versions": {
+        "0.3.0-beta.1": {
+          "name": "com.tsukimicode.udon-tools",
+          "displayName": "TsukimiSharp(T#)",
+          "version": "0.3.0-beta.1",
+          "unity": "2022.3",
+          "description": "VRChatのUdon向けのC#コンパイラ(interface/ジェネリクス/リアクティブ宣言/GPU実行/ユニットテスト)。extern削減の最適化とAI向け静的解析サーバ(MCP)を同梱。",
+          "author": {
+            "name": "TsukimiCode",
+            "url": "https://github.com/zz-roba"
+          },
+          "documentationUrl": "https://tsukimi-reference.pages.dev/reference/",
+          "license": "Proprietary",
+          "licensesUrl": "https://github.com/zz-roba/tsukimi-vpm/blob/main/LICENSE.md",
+          "changelogUrl": "https://github.com/zz-roba/tsukimi-vpm/releases/tag/v0.3.0-beta.1",
+          "vpmDependencies": {
+            "com.vrchat.worlds": ">=3.10.4"
+          },
+          "samples": [
+            {
+              "displayName": "Showcase（構文と同期とGPUのサンプル集）",
+              "description": "TsukimiSharp(T#)で書けるC#の書き方を1つずつ見せる22本。switch式・パターン・record・with・独自structの演算子・継承・interface・null安全・データ指向・タプル・2次元配列・末尾からの添字と範囲、手動同期／自動同期、引数つきのネットワークイベント、別のBehaviourの呼び出し、プレイヤーと時間、値を変えると反映されるリアクティブな書き方、そしてGPUで解く水面と、その結果を読み戻して物を浮かせる例。シーンが2つ付いていて、開いてPlayするとそのまま触れます。アセンブリ定義の中に入れてあるので新しい構文が使えます（同梱のREADMEに帰結を書いています）。",
+              "path": "Samples~/Showcase"
+            }
+          ],
+          "url": "https://github.com/zz-roba/tsukimi-vpm/releases/download/v0.3.0-beta.1/com.tsukimicode.udon-tools-0.3.0-beta.1-vpm.zip",
+          "zipSHA256": "8133f3e300285ad4a1d3f041fb44a8d85307abb6687ca0ecbbdb88757b6217ec"
+        }
+      }
+    }
+  }
+}
