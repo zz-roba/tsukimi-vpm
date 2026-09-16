@@ -17,5 +17,6 @@ Then install **TsukimiCode Udon Tools** from the package list.
 ## Links
 
 <!-- - Documentation and issue tracker: https://github.com/zz-roba/tsukimi-docs -->
+- Reference: https://tsukimi-reference.pages.dev/reference/
 - Booth: https://tsukimicode.booth.pm/items/8650733
 - Discord: https://discord.com/invite/pvd8m2PwC
