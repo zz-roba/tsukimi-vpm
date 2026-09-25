@@ -197,6 +197,26 @@
           ],
           "url": "https://github.com/zz-roba/tsukimi-vpm/releases/download/v0.6.1/com.tsukimicode.udon-tools-0.6.1-vpm.zip",
           "zipSHA256": "f7f1e497865af3332c3efe76e2ef88ca853b59be165a61bc5ff49d0cb01e2210"
+        },
+        "0.7.7": {
+          "name": "com.tsukimicode.udon-tools",
+          "displayName": "TsukimiSharp(T#)",
+          "version": "0.7.7",
+          "unity": "2022.3",
+          "description": "VRChatのUdon向けのC#コンパイラ(interface/ジェネリクス/リアクティブ宣言/GPU実行/ユニットテスト)。extern削減の最適化とAI向け静的解析サーバ(MCP)を同梱。",
+          "author": {
+            "name": "TsukimiCode",
+            "url": "https://github.com/zz-roba"
+          },
+          "documentationUrl": "https://tsukimi-reference.pages.dev/reference/",
+          "license": "Proprietary",
+          "licensesUrl": "https://github.com/zz-roba/tsukimi-vpm/blob/main/LICENSE.md",
+          "changelogUrl": "https://github.com/zz-roba/tsukimi-vpm/releases/tag/v0.7.7",
+          "vpmDependencies": {
+            "com.vrchat.worlds": ">=3.10.4"
+          },
+          "url": "https://github.com/zz-roba/tsukimi-vpm/releases/download/v0.7.7/com.tsukimicode.udon-tools-0.7.7-vpm.zip",
+          "zipSHA256": "c4d52341323482c49493a5b1abdaf40146bbf0359cc44d624a2296b229cce271"
         }
       }
     }
