@@ -216,7 +216,7 @@
             "com.vrchat.worlds": ">=3.10.4"
           },
           "url": "https://github.com/zz-roba/tsukimi-vpm/releases/download/v0.7.7/com.tsukimicode.udon-tools-0.7.7-vpm.zip",
-          "zipSHA256": "c4d52341323482c49493a5b1abdaf40146bbf0359cc44d624a2296b229cce271"
+          "zipSHA256": "c2f2fb2c695dc8d6fbe0249da2fa280326a553a830193e6b742a6a17bfaa898d"
         }
       }
     }
